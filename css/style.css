@@ -1,0 +1,275 @@
+@import url("https://fonts.cdnfonts.com/css/cascadia-mono");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Cascadia Mono light", sans-serif;
+  /* overflow-x: hidden; */
+}
+:root {
+  --backgroundColor: rgba(46, 46, 46, 0.8);
+  --textColor: white; /* white color */
+  --fontFamily: "Cascadia Mono light", sans-serif;
+}
+body {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
+  line-height: 1.3;
+  font-family: var(--fontFamily);
+}
+.wrapper {
+  max-width: 1000px;
+  height: 80vh;
+  margin: 30px auto;
+  /* padding: 0 50px; */
+  background-color: black;
+  border: 2px solid var(--textColor);
+  border-radius: 10px;
+}
+.list{
+    font-size: 20px;
+    padding: 5px 0px;
+}
+@media (max-width: 768px){
+    .wrapper{
+        border: none;
+    }
+    .list{
+        display: inline;
+        padding: 0px 15px;
+        font-size: 16px;
+    }
+}
+.logo{
+    border: 2px solid white;
+    width: 75px;
+    height: 40px;
+    padding: 5px 5px;
+}
+.logo:hover{
+    transform: scale(1.2);
+}
+@media(max-width:768px){
+    .logo{
+        display: none;
+    }
+}
+.nav_line{
+    margin: 10px 0px;
+    border-bottom: 2px solid white;
+    height: 2px;
+    width: auto;
+    
+}
+.nav ul {
+margin: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+
+  
+}
+a{
+    text-decoration: none;
+    color: var(--textColor);
+    font-weight: bold;
+    
+}
+a:hover{
+    border-bottom: 2px solid white;
+}
+
+/* ------------------------------------------------ */
+.version_info{
+    margin-top: 0px;
+}
+.main_system{
+    width: auto;
+    height: 65vh;
+    overflow-y: auto;
+}
+.verinf{
+    font-size: 15px;
+}
+@media (max-width: 768px){
+    
+    .verinf{
+        font-size: 13px;
+    }
+    .main_system{
+       
+        height: 68vh;
+        
+    }
+}
+/* -------------------------------------------------- */
+
+label[for="usr_in"] {
+    background-color: white;
+    color: black;
+    font-size: 17px;
+   
+  }
+input[placeholder]{
+    color: white;
+}
+.system-about{
+    margin-top: 15px;
+    
+}
+.result_disp{
+    margin: 10px 20px;
+}
+@media (max-width: 768px){
+    .result_disp{
+        font-size: 13px;
+    }
+    label[for="usr_data"] {
+        background-color: white;
+        color: black;
+        
+        margin-top: 10px;
+      }
+      label[for="usr_in"] {
+        
+        font-size: 15px;
+        
+      }
+}
+/* ------------------------------- */
+#usr_in{
+    height: 35px;
+    width: 60%;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+
+}
+.input_cmd{
+    margin-top: 10px;
+}
+@media (max-width:768px) {
+    #usr_in{
+        height: 25px;
+        width: 45%;
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 15px;
+        color: white;
+    
+    }
+}
+/* fotter------------------ */
+.footer{
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    flex-direction: column-reverse;
+}
+.social-media i{
+    font-size: 25px;
+    margin: 10px 10px;
+}
+
+/* ---------------------project images-------------------- */
+.project_img{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.row{
+    height: 50vh;
+    width: 20vw;
+    border-style: dashed;
+    
+}
+.title{
+    padding: 0px 6em;
+    margin-top: 5px;
+}
+@media  (max-width:768px){
+    .project_img{
+        flex-direction: column;
+        margin-left: 20px;
+
+    }
+    .row{
+        height: 25vh;
+        width: 80vw;
+        /* gap: 35px; */
+        margin: 10px 0px;
+    }
+    .title{
+        padding: 0px 8em;
+        margin-top: 5px;
+        font-size: 13px;
+    }
+    .col-val-1{
+        font-size: 11px;
+    }
+}
+
+/* -------------------------------scroll bar */
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+ 
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey; 
+    border-radius: 10px;
+  }
+   
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--textColor); 
+    border-radius: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--backgroundColor); 
+  }
+
+  /* ------------------------------follow up links---------------------- */
+  .follow_up_links{
+    display: flex;
+    justify-content: center;
+  }
+  .btn{
+    width: 125px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: grey;
+    color: var(--textColor);
+    font-weight: bold;
+    margin: 0px 50px;
+  }
+  @media (max-width:768px) {
+    .btn{
+        margin: 0px 20px;
+    }
+  }
+
+
+  #system_help{
+    display: none;
+  }
+.follow_up_links:hover{
+    text-decoration: none;
+}
